@@ -7,7 +7,7 @@ import pickle
 st.write("""
 #  App
 
-This app predicts the largest of Three Numbers
+This app predicts the largest of Three Numbers - Made by Abishek Chakravarthy
 """)
 #Get Input
 
