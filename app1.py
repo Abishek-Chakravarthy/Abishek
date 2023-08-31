@@ -19,9 +19,9 @@ def user_input_features():
     c = st.number_input("Third Number",min_value=2.0,max_value=2000000.0)
     data = {'First Number':a,'Second Number':b,'Third Number':c}
     features = pd.DataFrame(data, index=[0])
-    return features
+    return features,data
 
-df = user_input_features()
+df,data= user_input_features()
 
 st.subheader('User Input parameters')
 st.write(df.to_dict())
