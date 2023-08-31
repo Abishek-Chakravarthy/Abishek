@@ -27,10 +27,10 @@ st.subheader('User Input parameters')
 st.write(df.to_dict())
 
 st.subheader('Prediction')
-if a>=b and a>=c:
-    st.write('The largest number is',a)
-elif b>=a and b>=c:
-    st.write('The largest number is',b)
+if data['First Number']>=data['Second Number'] and data['First Number']>=data['Third Number']:
+    st.write('The largest number is',data['First Number'])
+elif data['Second Number']>=data['First Number'] and data['Second Number']>=data['Third Number']:
+    st.write('The largest number is',data['Second Number'])
 else:
-    st.write('The largest number is',c)
+    st.write('The largest number is',data['Third Number'])
 #st.write(prediction)
